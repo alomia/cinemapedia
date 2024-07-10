@@ -1,6 +1,6 @@
 # Cinemapedia
 
-A movie application made with Flutter.
+Una aplicación de cine hecha con Flutter.
 
 
 ## Dev
