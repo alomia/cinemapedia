@@ -46,6 +46,7 @@ class _HomeViewState extends ConsumerState<_HomeView> {
           title: 'En cines',
           subtitle: 'Lunes 20',
           movies: nowPlayingMovies,
+          loadNextPage: () => ref.read(nowPlayingMoviesProvider.notifier).loadNextPage(),
         )
       ],
     );
