@@ -76,7 +76,7 @@ class MoviedbDatasource extends MoviesDatasource {
     if (response.statusCode != HttpStatus.ok) throw Exception('Movie with id $id not found');
 
     final movieDetails = MovieDetails.fromJson(response.data);
-    final movie = MovieMapper.MovieDetailsToEntity(movieDetails);
+    final movie = MovieMapper.movieDetailsToEntity(movieDetails);
 
     return movie;
   }

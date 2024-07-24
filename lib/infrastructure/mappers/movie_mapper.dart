@@ -23,7 +23,7 @@ class MovieMapper {
         voteCount: moviedb.voteCount,
       );
   
-  static Movie MovieDetailsToEntity(MovieDetails moviedb) => Movie(
+  static Movie movieDetailsToEntity(MovieDetails moviedb) => Movie(
     adult: moviedb.adult,
         backdropPath: moviedb.backdropPath.isEmpty
             ? 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png'
