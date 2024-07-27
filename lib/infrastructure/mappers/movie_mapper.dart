@@ -14,7 +14,7 @@ class MovieMapper {
         overview: moviedb.overview,
         popularity: moviedb.popularity,
         posterPath: moviedb.posterPath.isEmpty
-            ? 'no-poster'
+            ? 'https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg'
             : 'https://image.tmdb.org/t/p/w500${moviedb.posterPath}',
         releaseDate: moviedb.releaseDate,
         title: moviedb.title,
